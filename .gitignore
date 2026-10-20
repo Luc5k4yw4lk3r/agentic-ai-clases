@@ -1,0 +1,14 @@
+# Entornos y dependencias
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets
+.env
+
+# Sistema
+.DS_Store

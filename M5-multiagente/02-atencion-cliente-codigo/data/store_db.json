@@ -1,0 +1,56 @@
+{
+ "inventory": {
+  "1": {
+   "item_id": "SG001",
+   "name": "Aviator",
+   "description": "Diseñados originalmente para pilotos: lentes en forma de gota y marco metálico fino. Cobertura amplia y construcción liviana para uso prolongado.",
+   "quantity_in_stock": 23,
+   "price": 80
+  },
+  "2": {
+   "item_id": "SG002",
+   "name": "Wayfarer",
+   "description": "Marco grueso y angular que marca presencia. Aire retro con un toque moderno; lentes rectangulares y acetato resistente.",
+   "quantity_in_stock": 6,
+   "price": 95
+  },
+  "3": {
+   "item_id": "SG003",
+   "name": "Mystique",
+   "description": "Inspirados en el glamour de los años 50: el marco se eleva en las puntas y dibuja una silueta elegante. Patillas con detalles.",
+   "quantity_in_stock": 3,
+   "price": 70
+  },
+  "4": {
+   "item_id": "SG004",
+   "name": "Sport",
+   "description": "Pensados para deportes: una sola lente curva envolvente que protege del viento. Marco flexible y liviano con grips de goma.",
+   "quantity_in_stock": 11,
+   "price": 110
+  },
+  "5": {
+   "item_id": "SG005",
+   "name": "Classic",
+   "description": "Perfil redondo clásico con marco metálico minimalista. Un estilo atemporal que va tanto con ropa casual como formal.",
+   "quantity_in_stock": 10,
+   "price": 60
+  },
+  "6": {
+   "item_id": "SG006",
+   "name": "Moon",
+   "description": "Estilo redondo oversize con marco plástico grueso. Estética retro con un giro moderno.",
+   "quantity_in_stock": 10,
+   "price": 120
+  }
+ },
+ "transactions": {
+  "1": {
+   "transaction_id": "TXN001",
+   "customer_name": "OPENING_BALANCE",
+   "transaction_summary": "Saldo de apertura de caja",
+   "transaction_amount": 500.0,
+   "balance_after_transaction": 500.0,
+   "timestamp": "2026-10-19T10:36:58"
+  }
+ }
+}

@@ -1,0 +1,34 @@
+# Material "Agentic AI — labs para clase". Python 3.11+
+# Instalar: pip install -r requirements.txt
+
+# LLM
+aisuite[openai]>=0.2.0        # cliente unificado; tools como funciones Python + max_turns
+openai>=1.100                 # SDK directo (function calling "a mano")
+docstring-parser>=0.16        # aisuite lo usa para generar el schema de las tools
+python-dotenv>=1.0
+
+# Datos
+pandas>=2.2
+tabulate>=0.9                 # df.to_markdown() lo necesita (M2 SQL)
+duckdb>=1.0                   # M5 customer service (tools-only)
+tinydb>=4.8                   # M5 customer service (code as action)
+matplotlib>=3.8               # M2 gráficos
+Pillow>=10.0
+
+# Tools de investigación (M3 graded, M4, M5 graded)
+tavily-python>=0.5
+requests>=2.32               # arXiv y Wikipedia se consultan con requests (sin paquete "wikipedia")
+
+# Servidor de email (M3)
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0
+pydantic>=2.7
+httpx>=0.27                   # tests del servidor
+
+# Notebooks y verificación
+jupyter>=1.0
+ipykernel>=6.29
+nbformat>=5.10
+jupytext>=1.16                # tools/build_nb.py
+pytest>=8.0

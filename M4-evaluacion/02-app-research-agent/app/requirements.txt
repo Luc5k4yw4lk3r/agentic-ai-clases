@@ -1,0 +1,25 @@
+# Dependencias de la app (Reflective Research Agent). Python 3.11+
+# [Adaptación clase] el original no fijaba versiones, repetía paquetes y dependía de `wikipedia`
+# (abandonado). Wikipedia ahora se consulta con `requests` (ver src/research_tools.py).
+
+# Web
+fastapi>=0.115
+uvicorn[standard]>=0.30
+jinja2>=3.1
+pydantic>=2.7
+
+# Persistencia
+sqlalchemy>=2.0
+psycopg2-binary>=2.9        # solo si usás Postgres (con DATABASE_URL=sqlite:///... no hace falta)
+
+# LLM (mismas versiones que el requirements.txt de la raíz del material)
+aisuite[openai]>=0.2.0
+openai>=1.100
+docstring-parser>=0.16      # aisuite lo usa para armar el schema de las tools desde los docstrings
+python-dotenv>=1.0
+
+# Tools de investigación
+tavily-python>=0.5
+requests>=2.32
+pdfminer.six>=20231228      # extraer texto de los PDFs de arXiv (desactivable con ARXIV_FETCH_PDF=0)
+# pymupdf>=1.24             # opcional: extracción de PDF más rápida; si no está, se usa pdfminer
